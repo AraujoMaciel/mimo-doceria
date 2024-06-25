@@ -1,0 +1,7 @@
+"vermelhoForte":"#A60832",
+"vermelhoFraco":"#F24B78",
+"amarelo":"#F2EA7E",
+"marrom":"#A66844",
+"rosa1":"#F299B1",
+"rosa2":"#BF788B",
+"cinza":"#818DA6"
