@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header(){
 
@@ -31,10 +32,10 @@ export default function Header(){
             <div className={`
                 bg-rosa2 p-4 flex justify-center text-white font-light ${estadoMenu?'hidden':'visible'}
                 `}>
-                <ul className="text-center flex flex-col gap-y-2">
-                    <li className="hover:text-gray-200 hover:cursor-pointer">Home</li>
-                    <li className="hover:text-gray-200 hover:cursor-pointer">Menu</li>
-                    <li className="hover:text-gray-200 hover:cursor-pointer">Saiba Mais</li>
+                <ul className="text-center flex flex-col gap-y-2" onClick={() => setEstadoMenu(true)}>
+                    <li className="hover:text-gray-200 hover:cursor-pointer"><Link href="/">Início</Link></li>
+                    <li className="hover:text-gray-200 hover:cursor-pointer"><Link href="/paginas/produtos">Produtos</Link></li>
+                    <li className="hover:text-gray-200 hover:cursor-pointer"><Link href="/paginas/saiba-mais">Saiba Mais</Link></li>
                 </ul>
             </div>
         </div>
