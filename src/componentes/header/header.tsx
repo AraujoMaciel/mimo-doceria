@@ -10,7 +10,7 @@ export default function Header(){
     const [estadoMenu, setEstadoMenu] = useState(true);
 
     return(
-        <div className="mb-4">
+        <div className="">
             <div className="bg-rosa1">
                 <div className="flex items-center justify-center ">
                     <Image
